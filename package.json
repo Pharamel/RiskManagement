@@ -15,10 +15,10 @@
     "express": "^4",
     "@sap/cds-hana": "^2",
     "@sap/xssec": "^3",
+    "@sap/cds-dk": "^7",
     "passport": "^0"
   },
-  "devDependencies": {
-    "@sap/cds-dk": "^7",
+  "devDependencies": {    
     "@sap/ux-specification": "^1.108.13",
     "sqlite3": "^5.0.4"
   },
@@ -65,6 +65,9 @@
         "auth": "xsuaa"
       }
     }
+  },
+  "hana": {
+    "deploy-format": "hdbtable"
   },
   "sapux": [
     "app/risks"

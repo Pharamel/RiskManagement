@@ -58,6 +58,15 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
+        role-collections:
+        - name: 'RiskManager-${space}'
+          description: Manage Risks
+          role-template-references:
+          - $XSAPPNAME.RiskManager
+        - name: 'RiskViewer-${space}'
+          description: View Risks
+          role-template-references:
+          - $XSAPPNAME.RiskViewer
         # [...]
         oauth2-configuration:
           # <-- add this
